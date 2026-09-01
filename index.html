@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Security Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1>🛡️ Web Security Dashboard</h1>
+        <p>Learn. Understand. Secure.</p>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="hero">
+            <h2>Web Security Vulnerabilities</h2>
+
+            <p>
+                Explore common web security vulnerabilities,
+                understand how they work, and learn how to prevent them.
+            </p>
+        </section>
+        <!-- STATISTICS -->
+<section class="statistics">
+
+    <div class="stat-card">
+        <span class="stat-number" id="totalCount">0</span>
+        <span class="stat-label">Total Vulnerabilities</span>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-number" id="highCount">0</span>
+        <span class="stat-label">High Severity</span>
+    </div>
+
+    <div class="stat-card">
+        <span class="stat-number" id="mediumCount">0</span>
+        <span class="stat-label">Medium Severity</span>
+    </div>
+
+</section>
+
+        <!-- SEARCH -->
+<div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔎 Search vulnerabilities..."
+    >
+</div>
+<!-- FILTER BUTTONS -->
+<div class="filter-container">
+
+    <button class="filter-btn active" data-filter="all">
+        ALL
+    </button>
+
+    <button class="filter-btn" data-filter="high">
+        HIGH
+    </button>
+
+    <button class="filter-btn" data-filter="medium">
+        MEDIUM
+    </button>
+
+</div>
+
+        <section class="vulnerabilities">
+
+            <div class="card">
+                <span class="icon">🔴</span>
+                <h3>SQL Injection</h3>
+                <span class="severity high">HIGH</span>
+                <p>
+                    Learn how improper input handling can affect
+                    database queries.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <span class="icon">🟠</span>
+                <h3>Cross-Site Scripting</h3>
+                <span class="severity high">HIGH</span>
+                <p>
+                    Understand how malicious scripts can affect
+                    web applications.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <span class="icon">🟡</span>
+                <h3>IDOR</h3>
+                <span class="severity high">HIGH</span>
+                <p>
+                    Learn about broken access controls and
+                    unauthorized object access.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <span class="icon">🔵</span>
+                <h3>Authentication</h3>
+                <span class="severity medium">MEDIUM</span>
+                <p>
+                    Understand common authentication security
+                    weaknesses.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <span class="icon">🟣</span>
+                <h3>Business Logic</h3>
+                <span class="severity medium">MEDIUM</span>
+                <p>
+                    Explore vulnerabilities caused by flaws
+                    in application logic.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="card">
+                <span class="icon">🟢</span>
+                <h3>API Security</h3>
+                <span class="severity medium">MEDIUM</span>
+                <p>
+                    Learn the fundamentals of securing modern
+                    APIs.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Web Security Dashboard © 2026</p>
+    </footer>
+    <!-- VULNERABILITY MODAL -->
+<div class="modal" id="securityModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" id="closeModal">&times;</button>
+
+        <span class="modal-badge">SECURITY TOPIC</span>
+
+        <h2 id="modalTitle">Vulnerability</h2>
+
+        <div class="modal-section">
+            <h3>What is it?</h3>
+            <p id="modalDescription"></p>
+        </div>
+
+        <div class="modal-section">
+            <h3>How does it happen?</h3>
+            <p id="modalHow"></p>
+        </div>
+
+        <div class="modal-section">
+            <h3>Impact</h3>
+            <p id="modalImpact"></p>
+        </div>
+
+        <div class="modal-section">
+            <h3>How to prevent it?</h3>
+            <p id="modalPrevention"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+ 
+</body>
+
+</html>

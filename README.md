@@ -1,10 +1,10 @@
-# 🛡️ Web Security Dashboard
+ # 🛡️ Web Security Dashboard
 
 An interactive educational dashboard designed to help beginners understand common web security vulnerabilities and basic prevention techniques.
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://fuzzy-palm-tree-wv9694xw64jrc7v5-8000.app.github.dev/)
+The project is currently available through GitHub Codespaces.
 
 ## 📌 Features
 

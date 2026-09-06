@@ -365,3 +365,52 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+#themeToggle {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    background: #1e293b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#themeToggle:hover {
+    transform: translateY(-2px);
+    border-color: #38bdf8;
+}
+body.light-mode {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+body.light-mode .navbar,
+body.light-mode .card,
+body.light-mode .stat-card,
+body.light-mode #searchInput,
+body.light-mode .filter-btn {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+
+body.light-mode #searchInput::placeholder {
+    color: #64748b;
+}
+
+body.light-mode .filter-btn {
+    color: #475569;
+}
+
+body.light-mode .modal-content {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+
+body.light-mode .filter-btn.active {
+    color: #ffffff;
+}

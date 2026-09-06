@@ -242,3 +242,28 @@ themeToggle.addEventListener("click", () => {
         themeToggle.textContent = "🌙 Dark Mode";
     }
 });
+const securityScore = document.getElementById("securityScore");
+const scoreMessage = document.getElementById("scoreMessage");
+
+function updateSecurityScore() {
+    const total = cards.length;
+    const high = document.querySelectorAll(".severity.high").length;
+    const medium = document.querySelectorAll(".severity.medium").length;
+
+    let score = 100;
+
+    score -= high * 10;
+    score -= medium * 5;
+
+    securityScore.textContent = score;
+
+    if (score >= 80) {
+        scoreMessage.textContent = "Good security awareness!";
+    } else if (score >= 60) {
+        scoreMessage.textContent = "Needs some improvement.";
+    } else {
+        scoreMessage.textContent = "Review the security topics carefully.";
+    }
+}
+
+updateSecurityScore();

@@ -414,3 +414,40 @@ body.light-mode .modal-content {
 body.light-mode .filter-btn.active {
     color: #ffffff;
 }
+.security-score {
+    background: #111827;
+    border: 1px solid #263247;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.security-score h2 {
+    margin-bottom: 20px;
+}
+
+.score-circle {
+    width: 140px;
+    height: 140px;
+    border: 8px solid #38bdf8;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#securityScore {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.score-circle small {
+    color: #94a3b8;
+}
+
+#scoreMessage {
+    color: #94a3b8;
+}
